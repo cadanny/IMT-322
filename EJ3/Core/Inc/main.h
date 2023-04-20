@@ -30,6 +30,8 @@ extern "C" {
 #include "stm32f7xx_hal.h"
 #include "stm32f7xx_nucleo_144.h"
 #include "string.h"
+#include <stdint.h>
+#include <stdbool.h>
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -39,6 +41,7 @@ extern "C" {
 /* USER CODE BEGIN ET */
 
 /* USER CODE END ET */
+
 
 /* Exported constants --------------------------------------------------------*/
 /* USER CODE BEGIN EC */

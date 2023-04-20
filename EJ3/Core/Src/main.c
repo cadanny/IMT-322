@@ -98,6 +98,10 @@ int main(void)
 		BSP_LED_Init(LED2);
 		BSP_LED_Init(LED3);
 		BSP_PB_DeInit(BUTTON_USER);
+
+
+
+
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -134,25 +138,31 @@ int main(void)
 	  //damos la secuencia de los leds y esta secuencia se acabara soltando el boton y terminando la secuencia
 
 	  if(BSP_PB_GetState(BUTTON_USER)){
-	  		  	  	  BSP_LED_On(LED1);
-	  			  	  BSP_LED_Off(LED2);
-	  			  	  BSP_LED_Off(LED3);
-	  			  	  HAL_Delay(1000);
 
-	  			  	  BSP_LED_Off(LED1);
-	  			  	  BSP_LED_On(LED2);
-	  			  	  BSP_LED_Off(LED3);
-	  			  	  HAL_Delay(1000);
 
-	  			  	  BSP_LED_Off(LED1);
-	  			  	  BSP_LED_Off(LED2);
-	  			  	  BSP_LED_On(LED3);
-	  			  	  HAL_Delay(1000);
+	  	  BSP_LED_On(LED1);
+	  	  BSP_LED_Off(LED2);
+	  	  BSP_LED_Off(LED3);
+	  	  HAL_Delay(1000);
+
+	  	  BSP_LED_Off(LED1);
+	  	  BSP_LED_On(LED2);
+	  	  BSP_LED_Off(LED3);
+	  	  HAL_Delay(1000);
+
+	  	  BSP_LED_Off(LED1);
+	  	  BSP_LED_Off(LED2);
+	  	  BSP_LED_On(LED3);
+	  	  HAL_Delay(1000);
+
 	  	  }
     /*USER CODE BEGIN 3*/
   }
+
+
   /* USER CODE END 3 */
 }
+
 
 /**
   * @brief System Clock Configuration
